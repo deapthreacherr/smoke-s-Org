@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-g" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOLT AI Workstation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              mono: ['Roboto Mono', 'monospace'],
+            },
+            colors: {
+              'bolt-dark': '#0D0C14',
+              'bolt-dark-800': '#151326',
+              'bolt-dark-700': '#1D1A39',
+              'bolt-dark-600': '#2A2655',
+              'bolt-primary': '#4F46E5',
+              'bolt-secondary': '#7C3AED',
+              'bolt-accent': '#EC4899',
+              'bolt-glow': '#4f46e580',
+            },
+            animation: {
+                'fade-in': 'fadeIn 0.5s ease-out forwards',
+                'slide-in-bottom': 'slideInBottom 0.5s ease-out forwards',
+                'pulse-glow': 'pulseGlow 2s infinite ease-in-out',
+            },
+            keyframes: {
+                fadeIn: {
+                    '0%': { opacity: 0 },
+                    '100%': { opacity: 1 },
+                },
+                slideInBottom: {
+                    '0%': { opacity: 0, transform: 'translateY(20px)' },
+                    '100%': { opacity: 1, transform: 'translateY(0)' },
+                },
+                pulseGlow: {
+                    '0%, 100%': { boxShadow: '0 0 15px 5px rgba(79, 70, 229, 0.4)' },
+                    '50%': { boxShadow: '0 0 25px 10px rgba(79, 70, 229, 0.7)' },
+                }
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "@react-three/fiber": "https://aistudiocdn.com/@react-three/fiber@^9.3.0",
+    "@react-three/drei": "https://aistudiocdn.com/@react-three/drei@^10.7.4",
+    "three": "https://aistudiocdn.com/three@^0.180.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

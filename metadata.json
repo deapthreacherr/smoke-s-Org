@@ -1,0 +1,5 @@
+{
+  "name": "BOLT AI Workstation",
+  "description": "An AI-powered developer dashboard and workspace manager, inspired by Replit and Warp. It provides a central hub to create, manage, and monitor development projects using AI agents, with a 3D interface to visualize the build process.",
+  "requestFramePermissions": []
+}
